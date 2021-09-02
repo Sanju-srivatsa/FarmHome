@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" sizes="32x32">
+    <title>FarmHome</title>
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header section starts -->
+<header>
+    <div class="header-1">
+<!-- Title Section -->
+        <a href="#" class="logo"><img src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" width="50" height="50" style="border-radius:50%" alt=""> FarmHome</a>
+<!-- Search section -->
+        <form action="" onsubmit="return false" class="search-box-container">
+            <input type="search" id="search" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#category">category</a>
+            <a href="#store-products">product</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" id="show-login" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+<!-- header section ends -->
+<section>
+<div class="popup">
+  <div class="close-btn"></div>
+  <div class="form">
+    <h2>Login</h2>
+    <div class="form-element">
+      <label for="email">Email</label>
+      <div id="form" action="#">
+      <input type="text" id="email" placeholder="Enter mail-id" onkeydown="validation()">
+      <span id="text"></span>
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <div class="form-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign In</button>
+        </div>
+        <div class="form-control">
+          <a href="">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- home section starts  -->
+<section class="home" id="home">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://t3.ftcdn.net/jpg/02/99/93/06/360_F_299930691_6VxCqunfvz2zAjzzi1m8O1SttnAbjDZf.jpg" style="width:100%">
+  <div class="text">Get 50% off</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://t3.ftcdn.net/jpg/03/35/74/56/360_F_335745675_MaxYxSsadrviZdThITuHB2oCohYOiwEu.jpg" style="width:100%">
+  <div class="text">Use TRYNEW for FREE Delivery</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://t4.ftcdn.net/jpg/02/08/87/81/360_F_208878179_XWGL0wPpp9lRLRja9fITNwMAHYzTwlUK.jpg" style="width:100%">
+  <div class="text">Sale on Fresh Vegetables</div>
+</div>
+
+</div>
+<br>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</section>
+<!-- home section ends -->
+
+<!-- category section starts -->
+<section class="category" id="category">
+    <h1 class="heading">shop by <span>category</span></h1>
+<div class="box-container filter-box">
+ <div class="box">
+   <a href="#store-products"><h3>All</h3>
+      <p>upto 50% off</p>
+    <img src="https://t3.ftcdn.net/jpg/02/69/84/78/240_F_269847888_TKgnz2jvPGpMg3UpAdAUiwTBA3SRRwHl.jpg" alt="">
+  <a href="#" class="btn" data-filter="all">Shop Now</a></a>
+  </div>             
+          <div class="box">
+ <a href="#store-products">            <h3>Vegetables</h3>
+            <p>upto 44% off</p>
+            <img src="https://t3.ftcdn.net/jpg/00/01/58/06/240_F_1580633_VYebvOlRgRSzj7Ms7r6LsGmXYapi5L.jpg" alt="Vegetables">
+<a href="#" class="btn" data-filter="vegetable">Shop Now</a></a>
+        </div>
+               
+        <div class="box">
+ <a href="#store-products">            <h3>Fruits</h3>
+            <p>upto 35% off</p>
+            <img src="https://t4.ftcdn.net/jpg/00/53/14/41/240_F_53144147_Zx2dgnSeefxIjOQ5cjD4PBdZF4m8M7sm.jpg" alt="Fruits">
+  <a href="#" class="btn" data-filter="fruit">Shop Now</a></a>
+        </div>
+        <div class="box">
+ <a href="#store-products">            <h3>Meat</h3>
+            <p>upto 12% off</p>
+            <img src="https://t3.ftcdn.net/jpg/01/45/46/10/240_F_145461027_UESAGvh8W9V8tKkvCwxgrR9Ij1072QqN.jpg" alt="Meat">
+              <a href="#" class="btn" data-filter="meat">Shop Now</a></a>
+        </div>               
+   </div>
+</section>
+<!-- category section starts -->
+
+
+<!-- product section starts  -->
+<section class="container product" id="store-products">
+        <h1 class="heading">Available <span>products</span></h1>  
+        
+        <div class="slide-container box-container">
+    <!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/83/74/93/240_F_283749341_bf16ndfgOLARjJf4qru05V7wLhsIktOC.jpg" alt="Tomatoe">
+            <div class="product-details">
+                <h2>Tomatoe</h2>
+                <div class="price"> ₹19.50 <span> ₹23.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+      <!-- pr  -->
+<div class="box store-product fruit">
+<span class="discount">-13%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/46/49/95/240_F_246499525_NILvQDVgi7Go8iqr3w4AzcS5rov3LqkZ.jpg" alt="Papaya">
+            <div class="product-details">
+                <h2>Papaya</h2>
+                <div class="price"> ₹39.50 <span> ₹53.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-12%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/04/50/25/27/240_F_450252702_t1MS5EHtWKAIlmLfXv1RCjkg1aSSaMr3.jpg" alt="Bottle Guard">
+            <div class="product-details">
+                <h2>Lauki-Bottle Guard</h2>
+                <div class="price"> ₹29.50 <span> ₹33.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product fruit">
+<span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/00/61/19/53/240_F_61195341_rR4lMptEspj16GvOdmy0MaMznSRveh2M.jpg" alt="Orange">
+            <div class="product-details">
+                <h2>Orange</h2>
+                <div class="price"> ₹99.50 <span> ₹123.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product fruit">
+<span class="discount">-15%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/00/33/88/02/240_F_33880235_4SaVkmhk6tEVPoG8zoWItRrBjj3ukkle.jpg" alt="Banana">
+            <div class="product-details">
+                <h2>Banana Robusta 6Pcs</h2>
+                <div class="price"> ₹28 <span> ₹33.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/66/68/37/240_F_266683754_wzx9XxeNXKudct2Q3qwQf1PvVaQaKOf6.jpg" alt="Cucumber">
+            <div class="product-details">
+                <h2>Cucumber</h2>
+                <div class="price"> ₹12.20 <span> ₹15.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product fruit">
+<span class="discount">-25%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/00/71/10/72/240_F_71107237_3GNipwDTQnsDZN3cMvXr3o9SPdxt4sXx.jpg" alt="Grapes">
+            <div class="product-details">
+                <h2>Grapes</h2>
+                <div class="price"> ₹70.50 <span> ₹93.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product fruit">
+<span class="discount">-14%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/03/10/32/02/240_F_310320273_I9rR1l7918MJoZ0GRHGIBgZl9F9ShEXq.jpg" alt="Apple">
+            <div class="product-details">
+                <h2>Apple</h2>
+                <div class="price"> ₹269 <span> ₹313.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr         -->
+<div class="box store-product vegetable">
+<span class="discount">-53%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/17/54/73/240_F_217547300_Xrpg8LijP5cICZ110HY1TyCFnUVKoYCC.jpg" alt="Sweet Corn">
+            <div class="product-details">
+                <h2>Sweet Corn</h2>
+                <div class="price"> ₹7 <span> ₹13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /Unit </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-11%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/01/20/47/06/240_F_120470660_ha8n1vyrH0BVonoSjlod1GbualTYdPoA.jpg" alt="Carrot">
+            <div class="product-details">
+                <h2>Carrot</h2>
+                <div class="price"> ₹49.50 <span> ₹53.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-17%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/55/39/77/240_F_255397744_rwNCund3WjKsrsv6yKKpK8tzmJ8sYRnF.jpg" alt="Lemon">
+            <div class="product-details">
+                <h2>Lemon</h2>
+                <div class="price"> ₹5 <span> ₹6 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /Unit </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-31%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/03/30/15/28/240_F_330152841_Z7OhYdI0MPtm9lWaP8ZiNQh9OrGazlsP.jpg" alt="Fresh Red Cabbage">
+            <div class="product-details">
+                <h2>Fresh Red Cabbage</h2>
+                <div class="price"> ₹16.50 <span> ₹23.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+ <!-- pr -->
+<div class="box store-product fruit">
+<span class="discount">-33%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/27/04/15/240_F_227041521_R30fm1zPGoX3hQeGkGgFAKykT5irrv79.jpg" alt="Water Melon">
+            <div class="product-details">
+                <h2>Water Melon</h2>
+                <div class="price"> ₹10.50 <span> ₹13.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+  <!-- pr -->
+<div class="box store-product vegetable">
+<span class="discount">-42%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/04/71/77/240_F_204717759_jKE3GFstR1xgtNaFtnx8PnhU4ki7AA9j.jpg" alt="Okra">
+            <div class="product-details">
+                <h2>Okra</h2>
+                <div class="price"> ₹25.50 <span> ₹43 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product meat">
+<span class="discount">-14%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/02/69/86/25/240_F_269862581_uEUTt5Y2eGJVEqodxM2BcfBEEHPipBPZ.jpg" alt="Chiken">
+            <div class="product-details">
+                <h2>Chiken</h2>
+                <div class="price"> ₹210.50 <span> ₹273.70 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product meat">
+<span class="discount">-8.5%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/02/91/35/16/240_F_291351618_2ggRlHpK6pSwjUNtgMqhdaYliUYA5Jox.jpg" alt="Fresh Fish">
+            <div class="product-details">
+                <h2>Fresh Fish</h2>
+                <div class="price"> ₹650 <span> ₹710 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div></div>
+<!-- pr -->
+</div>
+    </section>
+<!-- product section ends  -->    
+
+<!-- banner section starts  -->
+<!-- <section class="banner-container">
+
+    <div class="banner">
+        <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-healthy-fruits-and-vegetables-green-leaves-literary-green-banner-image_172881.jpg" alt="">
+        <div class="content">
+            <h3>special offer</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">check out</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="https://www.postharvest.biz/_images/newscompany/78387/14602_modal.png" alt="">
+        <div class="content">
+            <h3>limited offer</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="btn">check out</a>
+        </div>
+    </div>
+
+</section> -->
+<!-- banner section ends -->
+
+<section class="newsletter" id="contact">
+
+    <h3>Subscribe us for latest updates</h3>
+
+    <form action="">
+        <input class="box" type="email" placeholder="Enter your Email">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box"><a href="#" class="logo"><img src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" width="50" height="50" style="border-radius:50%" alt=""> FarmHome</a><p>We are what we eat, So hurry up to get your healthy food from the organic farms.</p>
+            <div class="share">
+                <a href="#" class="btn fab fa-facebook-f"></a>
+                <a href="#" class="btn fab fa-twitter"></a>
+                <a href="#" class="btn fab fa-instagram"></a>
+                <a href="#" class="btn fab fa-linkedin"></a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3>our location</h3>
+            <div class="links">
+                <a href="#">Hyderabad</a>
+                <a href="#">Bangalore</a>
+                <a href="#">Mumbai</a>
+                <a href="#">chennai</a>
+                <a href="#">Amaravathi</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <div class="links">
+                <a href="#home">home</a>
+                <a href="#category">category</a>
+                <a href="#store-products">product</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>download app</h3>
+            <div class="links">
+                <a href="#">google play</a>
+                <a href="#">window xp</a>
+                <a href="#">app store</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- footer section ends -->
+    <script src="script.js"></script>
+</body>
+</html>
