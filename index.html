@@ -2,76 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" sizes="32x32">
+        <link rel="icon" href="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" sizes="32x32">
     <title>FarmHome</title>
-    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<!-- header section starts -->
-<header>
-    <div class="header-1">
+    
+<!-- header section starts  -->
+
+<header class="header">
+
 <!-- Title Section -->
         <a href="#" class="logo"><img src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" width="50" height="50" style="border-radius:50%" alt=""> FarmHome</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#category">category</a>
+        <a href="#store-products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
 <!-- Search section -->
-        <form action="" onsubmit="return false" class="search-box-container">
-            <input type="search" id="search" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
 
-    <div class="header-2">
-
-        <div id="menu-bar" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#category">category</a>
-            <a href="#store-products">product</a>
-            <a href="#contact">contact</a>
-        </nav>
-
-        <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" id="show-login" class="fas fa-user-circle"></a>
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="https://t4.ftcdn.net/jpg/02/27/04/15/240_F_227041521_R30fm1zPGoX3hQeGkGgFAKykT5irrv79.jpg" alt="">
+            <div class="content">
+                <h3>Watermelon</h3>
+                <span class="price">₹10.50</span>
+                <span class="quantity">qty : 1</span>
+            </div>
         </div>
-
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="https://t4.ftcdn.net/jpg/02/66/68/37/240_F_266683754_wzx9XxeNXKudct2Q3qwQf1PvVaQaKOf6.jpg" alt="">
+            <div class="content">
+                <h3>Cucumber</h3>
+                <span class="price">₹12.20</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="https://t4.ftcdn.net/jpg/02/69/86/25/240_F_269862581_uEUTt5Y2eGJVEqodxM2BcfBEEHPipBPZ.jpg" alt="">
+            <div class="content">
+                <h3>Chicken</h3>
+                <span class="price">₹210.5</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : ₹233.2 </div>
+        <a href="#" class="btn">checkout</a>
     </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="Your Email-Id" class="box">
+        <input type="password" placeholder="Your Password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
 
 </header>
-<!-- header section ends -->
-<section>
-<div class="popup">
-  <div class="close-btn"></div>
-  <div class="form">
-    <h2>Login</h2>
-    <div class="form-element">
-      <label for="email">Email</label>
-      <div id="form" action="#">
-      <input type="text" id="email" placeholder="Enter mail-id" onkeydown="validation()">
-      <span id="text"></span>
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter Password">
-        <div class="form-element">
-          <input type="checkbox" id="remember-me">
-          <label for="remember-me">Remember me</label>
-        </div>
-        <div class="form-element">
-          <button>Sign In</button>
-        </div>
-        <div class="form-control">
-          <a href="">Forgot Password?</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
 
+<!-- header section ends -->
 <!-- home section starts  -->
 <section class="home" id="home">
 <div class="slideshow-container">
@@ -102,6 +116,7 @@
 
 </section>
 <!-- home section ends -->
+
 
 <!-- category section starts -->
 <section class="category" id="category">
@@ -135,8 +150,6 @@
    </div>
 </section>
 <!-- category section starts -->
-
-
 <!-- product section starts  -->
 <section class="container product" id="store-products">
         <h1 class="heading">Available <span>products</span></h1>  
@@ -157,7 +170,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
       <!-- pr  -->
 <div class="box store-product fruit">
@@ -174,7 +187,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -191,7 +204,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -208,7 +221,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -225,7 +238,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -242,7 +255,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -259,7 +272,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -276,7 +289,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr         -->
 <div class="box store-product vegetable">
@@ -293,7 +306,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /Unit </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -310,7 +323,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -327,7 +340,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /Unit </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -344,7 +357,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
  <!-- pr -->
 <div class="box store-product fruit">
@@ -361,7 +374,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
   <!-- pr -->
 <div class="box store-product vegetable">
@@ -378,7 +391,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product meat">
@@ -395,7 +408,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product meat">
@@ -412,36 +425,13 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#home" class="btn">add to cart</a>
         </div></div>
 <!-- pr -->
 </div>
     </section>
 <!-- product section ends  -->    
 
-<!-- banner section starts  -->
-<!-- <section class="banner-container">
-
-    <div class="banner">
-        <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-healthy-fruits-and-vegetables-green-leaves-literary-green-banner-image_172881.jpg" alt="">
-        <div class="content">
-            <h3>special offer</h3>
-            <p>upto 45% off</p>
-            <a href="#" class="btn">check out</a>
-        </div>
-    </div>
-
-    <div class="banner">
-        <img src="https://www.postharvest.biz/_images/newscompany/78387/14602_modal.png" alt="">
-        <div class="content">
-            <h3>limited offer</h3>
-            <p>upto 50% off</p>
-            <a href="#" class="btn">check out</a>
-        </div>
-    </div>
-
-</section> -->
-<!-- banner section ends -->
 
 <section class="newsletter" id="contact">
 
@@ -504,6 +494,12 @@
 </section>
 
 <!-- footer section ends -->
-    <script src="script.js"></script>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
 </body>
 </html>
