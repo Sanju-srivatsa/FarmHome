@@ -60,7 +60,7 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2200); // Change image every 2 seconds
 }
-
+//filter
 const btns = document.querySelectorAll('.btn');
 const storeProducts = document.querySelectorAll('.store-product');
 
@@ -105,4 +105,32 @@ function filterProducts(e) {
             product.parentElement.parentElement.style.display = "none"
         }
     })
+}
+
+  //email-validation
+function validation(){
+  var form = document.getElementById("form");
+  var email = document.getElementById("email").value;
+  var text = document.getElementById("text");
+  var pattern = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+  if  (email.match(pattern)){
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "Your Email Address is Valid.";
+    text.style.color = "#369c17";
+  }else{
+    form.classList.remove("valid");    form.classList.add("invalid");    text.innerHTML = "Please Enter Valid Email Address.";
+    text.style.color = "#ff0000";    
+  }
+  if  (email == ""){
+    form.classList.remove("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "Please fill this section";
+    text.style.color = "#ff0000";
+  }
+
+    }
+//redirect
+function myFunction() {
+  alert("Please Login");
 }
