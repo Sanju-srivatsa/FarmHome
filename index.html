@@ -23,7 +23,7 @@
 <!-- Title Section -->
         <a href="#" class="logo"><img src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" width="50" height="50" style="border-radius:50%" alt=""> FarmHome</a>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <a href="#home">Home</a>
         <a href="#category">category</a>
         <a href="#store-products">Products</a>
@@ -76,11 +76,19 @@
 
     <form action="" class="login-form">
         <h3>login now</h3>
-        <input type="email" placeholder="Your Email-Id" class="box">
+<div class="form-element">
+      <label for="email"></label>
+      <div id="form" action="#">
+      <input class="box"
+       type="text" id="email" placeholder="Enter mail-id" onkeydown="validation()">
+      <span id="text"></span>
+      </div>      
         <input type="password" placeholder="Your Password" class="box">
-        <p>forget your password <a href="#">click here</a></p>
-        <p>don't have an account <a href="#">create now</a></p>
-        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        <p><a href="#">forgot password?</a></p>
+        <input type="submit" value="login now" class="btn">        
+        <p><a href="#">Create an Account</a></p>
     </form>
 
 </header>
@@ -92,17 +100,17 @@
 
 <div class="mySlides fade">
   <img src="https://t3.ftcdn.net/jpg/02/99/93/06/360_F_299930691_6VxCqunfvz2zAjzzi1m8O1SttnAbjDZf.jpg" style="width:100%">
-  <div class="text">Get 50% off</div>
+  <div class="text">Get 50% off on your First order</div>
 </div>
 
 <div class="mySlides fade">
   <img src="https://t3.ftcdn.net/jpg/03/35/74/56/360_F_335745675_MaxYxSsadrviZdThITuHB2oCohYOiwEu.jpg" style="width:100%">
-  <div class="text">Use TRYNEW for FREE Delivery</div>
+  <div class="text">Use TRYNEW for Free Delivery</div>
 </div>
 
 <div class="mySlides fade">
   <img src="https://t4.ftcdn.net/jpg/02/08/87/81/360_F_208878179_XWGL0wPpp9lRLRja9fITNwMAHYzTwlUK.jpg" style="width:100%">
-  <div class="text">Sale on Fresh Vegetables</div>
+  <div class="text">10% Cashback upto ₹200</div>
 </div>
 
 </div>
@@ -170,7 +178,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
       <!-- pr  -->
 <div class="box store-product fruit">
@@ -187,7 +195,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -204,7 +212,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -221,7 +229,23 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
+        </div></div>
+<div class="box store-product vegetable">
+<span class="discount">-12%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/01/78/81/46/240_F_178814653_Hyf3BjFqIzlzrmzY989xEp54RBr0EFzM.jpg" alt="Onions">
+            <div class="product-details">
+                <h2>Onions</h2>
+                <div class="price"> ₹25.50 <span> ₹29.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -238,7 +262,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -255,7 +279,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -272,7 +296,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product fruit">
@@ -289,7 +313,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr         -->
 <div class="box store-product vegetable">
@@ -306,7 +330,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /Unit </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -323,7 +347,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -340,7 +364,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /Unit </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product vegetable">
@@ -357,7 +381,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
  <!-- pr -->
 <div class="box store-product fruit">
@@ -374,7 +398,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
   <!-- pr -->
 <div class="box store-product vegetable">
@@ -391,7 +415,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product meat">
@@ -408,7 +432,7 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 <div class="box store-product meat">
@@ -425,7 +449,24 @@
                 <input type="number" min="1" max="1000" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#home" class="btn">add to cart</a>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
+        </div></div>
+<!-- pr -->
+<div class="box store-product meat">
+<span class="discount">-8.5%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/01/72/46/43/240_F_172464300_qeV2C06MoJCZ1aPtFeSLC2dXI6o7OQo4.jpg">
+            <div class="product-details">
+                <h2>Fresh Prawns</h2>
+                <div class="price"> ₹350 <span> ₹410 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#navbar" class="btn" onclick="myFunction()">add to cart</a>
         </div></div>
 <!-- pr -->
 </div>
@@ -448,8 +489,7 @@
 <section class="footer">
 
     <div class="box-container">
-
-        <div class="box"><a href="#" class="logo"><img src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" width="50" height="50" style="border-radius:50%" alt=""> FarmHome</a><p>We are what we eat, So hurry up to get your healthy food from the organic farms.</p>
+        <div class="box"><a href="#" class="logo"><img src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" width="50" height="50" style="border-radius:50%" alt=""> <h1>FarmHome</h1></a><p>We are what we eat, So hurry up to get your healthy food from the organic farms.</p>
             <div class="share">
                 <a href="#" class="btn fab fa-facebook-f"></a>
                 <a href="#" class="btn fab fa-twitter"></a>
@@ -459,7 +499,7 @@
         </div>
         
         <div class="box">
-            <h3>our location</h3>
+            <h1>our location</h1>
             <div class="links">
                 <a href="#">Hyderabad</a>
                 <a href="#">Bangalore</a>
@@ -470,7 +510,7 @@
         </div>
 
         <div class="box">
-            <h3>quick links</h3>
+            <h1>quick links</h1>
             <div class="links">
                 <a href="#home">home</a>
                 <a href="#category">category</a>
@@ -480,7 +520,7 @@
         </div>
 
         <div class="box">
-            <h3>download app</h3>
+            <h1>download app</h1>
             <div class="links">
                 <a href="#">google play</a>
                 <a href="#">window xp</a>
@@ -496,7 +536,6 @@
 <!-- footer section ends -->
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="script.js"></script>
